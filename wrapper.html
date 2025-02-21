@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Fixed Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling on the whole page */
+        }
+        .navbar-frame {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px; /* Set height for the navbar */
+            border: none;
+            z-index: 1000;
+        }
+        .content-frame {
+            position: absolute;
+            top: 50px; /* Push content down below the navbar */
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 50px); /* Fill remaining space */
+            border: none;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <iframe class="navbar-frame" src="https://bagzic.github.io/mytestrepo/navbar.html"></iframe>
+    
+    <!-- Main Content -->
+    <iframe class="content-frame" src="https://example.com"></iframe>  
+</body>
+</html>
