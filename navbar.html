@@ -1,22 +1,43 @@
-<div id="customNavbar">
-    <a href="#">Home</a> | 
-    <a href="#">About</a> | 
-    <a href="#">Contact</a>
-</div>
-
-<style>
-    #customNavbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #333;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        z-index: 1000;
-    }
-    body {
-        padding-top: 50px; /* Prevent content from being hidden */
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent; /* Keep the iframe background transparent */
+        }
+        #customNavbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+        }
+        #customNavbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        #customNavbar a:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="customNavbar">
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </div>
+</body>
+</html>
