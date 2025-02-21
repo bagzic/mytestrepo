@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Fixed Navbar</title>
     <style>
         body {
             margin: 0;
@@ -26,6 +26,17 @@
             padding: 10px;
         }
     </style>
+    <script>
+        // Adjust iframe height so the navbar doesn't take up too much space
+        window.onload = function() {
+            parent.document.querySelector("iframe").style.height = "50px";
+            parent.document.querySelector("iframe").style.position = "fixed";
+            parent.document.querySelector("iframe").style.top = "0";
+            parent.document.querySelector("iframe").style.left = "0";
+            parent.document.querySelector("iframe").style.width = "100%";
+            parent.document.querySelector("iframe").style.zIndex = "1000";
+        };
+    </script>
 </head>
 <body>
     <div class="navbar">
